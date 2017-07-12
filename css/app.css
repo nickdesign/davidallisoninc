@@ -26,11 +26,11 @@ h1.advisory-header {
 }
 
 h3.landing-cca {
-	text-align: right;
+	text-align: left;
 	letter-spacing: -.015em;
-	font-size: 2.09rem;
+	font-size: 1.5rem;
 	line-height: 2.716666666666667rem;
-	margin: 0 20px 25px 0;
+	margin: 0 20px 100px 0;
     color: #222
 }
 
@@ -255,7 +255,7 @@ li a.no-top:hover {
 .container a {
     float: left;
     text-align: center;
-    padding: 14px 16px;
+    /*padding: 14px 16px;*/
     text-decoration: none;
 }
 
@@ -367,7 +367,7 @@ li a.no-top:hover {
 
 .right {
 	text-align: right;
-	margin-right: 20px;
+	margin-right: 0px;
 }
 
 .row img {
@@ -387,6 +387,10 @@ li a.no-top:hover {
 	text-align: center;
 }
 
+.bureau a {
+	float: none;
+}
+
 .bureau img {
 	width: 75px;
 	height: 75px;
@@ -394,14 +398,15 @@ li a.no-top:hover {
 }
 
 h1.brand-logo {
-	padding-top: 50px;
+	font-size: 1rem;
+	
 	margin: 0;
 }
 
 h1.brand-logo img {
-	height: 40px;
+	height: 15px;
 	width: auto;
-	margin: 1px 10px 10px 0;
+	margin: 6px 10px 10px 0;
 }
 
 
@@ -420,6 +425,10 @@ h3.title {
 }
 
 .columns {
+	border-left: 1px solid #E1E0E1;
+}
+
+.no-column {
 	border-left: 1px solid #E1E0E1;
 }
 
@@ -588,6 +597,11 @@ span.arrow:hover {
 		display: none;
 	}
 
+.landing-header {
+	padding-left: 25px;
+	padding-top: 100px;
+}
+
 @media screen and (min-width: 768px) {
 	.mobile-break {
 		display: none;
@@ -727,6 +741,170 @@ h1.sign-up {
 	float: right;
 }
 
+.block {
+	position: relative;
+}
+
+.block:hover {
+	opacity: 0.7;
+	transition: opacity 1s;
+  	-webkit-transition: opacity 1s;
+}
+
+p.CTA {
+	color: #fff;
+	border: #fff 10px;
+}
+
+.block p.CTA:hover {
+	
+	border-bottom: solid #bebebe;
+}
+
+.block h3 {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	margin-right: 45px;
+	color: #fff;
+}
+
+.block p {
+	margin-top: 5px;
+	font-size: .7em;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+
+/*. White Block. */
+
+.block-white {
+	position: relative;
+	width: 100%;
+}
+
+.block-white:hover {
+	opacity: 0.5;
+	transition: opacity 1s;
+  	-webkit-transition: opacity 1s;
+}
+
+.block-white p.CTA {
+	color: #000;
+	border: #fff 10px;
+}
+
+.block-white p.CTA:hover {
+	
+	border-bottom: solid #bebebe;
+}
+
+.block-white h3 {
+	position: absolute;
+	top: 275px;
+	left: 25px;
+	margin-right: 45px;
+	color: #000;
+}
+
+.block-white p {
+	margin-top: 5px;
+	font-size: .7em;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+/*. Kraft Block. */
+
+.block-kraft {
+	position: relative;
+	width: 100%;
+	
+}
+
+.block-kraft:hover {
+	 
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+	
+}
+
+.block-kraft p.CTA {
+	color: #fff;
+	border: #fff 10px;
+}
+
+.block-kraft p.CTA:hover {
+	
+	border-bottom: solid #bebebe;
+}
+
+.block-kraft h3 {
+	position: absolute;
+	top: 525px;
+	left: 25px;
+	margin-right: 45px;
+	color: #fff;
+}
+
+.block-kraft p {
+	margin-top: 5px;
+	font-size: .7em;
+	font-weight: 500;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+/*  Float Blocks Test  */
+
+.float-blocks {
+	width: 100%;
+	background-image: url("/img/workshops.jpg");
+	margin-top: 9px;
+}
+
+.float-blocks:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.float-blocks .content {
+	position: absolute;
+	padding: 25px;
+}
+
+.float-blocks .content:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.float-blocks .content h3 {
+	position: relative;
+	width: 40%;
+	height: auto;
+	font-size: 1.1em;
+	color: #fff;
+	}
+
+.float-blocks .content p {
+	width: 45%;
+	font-size: .8em;
+	margin-bottom: 0.5rem;
+}
+
+.container.landing-photo {
+	background-image: url("../img/kraft-bg.jpg");
+	background-size: 100% auto;
+	background-position: 100px -200px;
+	background-repeat: no-repeat;
+}
+
 /*	Media Queries  */
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -804,6 +982,9 @@ h1.sign-up {
 	height: 75px;
 	margin: 25px 25px 25px 25px;
 	}
+	h1.brand-logo {
+		text-align: center;
+	}
 	h1.brand-logo img {
 	height: 22px;
 	width: auto;
@@ -812,9 +993,64 @@ h1.sign-up {
 	h3.landing-cca {
 		font-size: 1.1em;
 		line-height: 1.2em;
-		margin: 15px 20	px 25px 50px;
-		text-align: right;
+		margin: 15px 0px 25px 0px;
+		text-align: center;
 		
+	}
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.no-column {
+	border-left: 0px solid #E1E0E1;
+	}
+	.mobile-menu {
+		font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    	font-weight: 900;
+    	font-size: 1em;
+    	color: #0a0a0a;
+    	padding: 10px 75px 0px 0px;
+	}
+	.landing-header {
+		padding-left: 0;
+	}
+	.container a{
+		float: none;
+	}
+	.landing-header {
+		padding-top: 0;
+	}
+	.block h3 {
+		position: relative;
+		color: #000;
+	}
+	.block-kraft {
+		display: block;
+		position: relative;
+	}
+	.block-kraft p {
+		color: #6d6963;
+	}
+	.block-white h3 {
+		position: static;
+		text-align: center;
+		margin: 25px 25px;
+	}
+	.block-kraft h3 {
+		color: #000;
+		position: static;
+		text-align: center;
+		margin: 25px 25px;
+	}
+	.columns {
+		border-left: 0;
+	}
+	p.CTA {
+		color: #000;
+		padding-bottom: 25px;
+	}
+	.block-kraft p.CTA {
+		color: #000;
 	}
 }
 
