@@ -22,6 +22,15 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
   <div class="menu-centered">
     <div class="menu-icons-container">
@@ -49,8 +58,8 @@
         <li class="dropdown">
           <a href="advisory-services.html">Advisory Services</a>
           <div class="dropdown-content">
-            <a href="advisory-services.html#workshops">Workshops</a>
-            <a href="advisory-services.html#custom-research">Custom Research</a>
+            <a href="advisory-services.html#workshops">&bull; Workshops</a>
+            <a href="advisory-services.html#custom-research">&bull; Custom Research</a>
           </div>
         </li>
       </li>
@@ -149,23 +158,25 @@
 
 
 
-      <div class="large-2 medium-12 small-12 columns bureau">
+      <div class="large-2 medium-12 small-12 columns">
 
         <div class="mobile-break">
         </div>
 
-        <p>David Allison is a frequent keynote speaker. He is represented by the two organizations below:</p>
-
-        <div class="bureau">
-          <a href="https://www.nsb.com/speakers/david-allison/" target="_blank"><img src="img/nsb-logo.svg" alt=""></a>
-          <h5>National Speakers Bureau</h5>
-          <h5><a href="https://www.nsb.com/speakers/david-allison/" target="_blank" class="button">Visit Website</a></h5>
-
+        <div class="bureau-note">
+          <p>David Allison is a frequent keynote speaker. He is represented by the two organizations below:</p>
         </div>
         <div class="bureau">
+          <div class="bureau-item">
+          <a href="https://www.nsb.com/speakers/david-allison/" target="_blank"><img src="img/nsb-logo.svg" alt=""></a>
+          <h5>National Speakers <br>Bureau</h5>
+          <h5><a href="https://www.nsb.com/speakers/david-allison/" target="_blank" class="button">Visit Website</a></h5>
+        </div>
+        <div class="bureau-item">
           <a href="http://www.globalspeakers.com/speakers/david-allison/" target="_blank"><img src="img/gsa-logo.svg" alt=""></a>        
-          <h5>Global Speakers Agency</h5>
+          <h5>Global Speakers <br>Agency</h5>
           <h5><a href="http://www.globalspeakers.com/speakers/david-allison/" target="_blank" class="button">Visit Website</a></h5>
+        </div>
         </div>
       </div>
     </div>
@@ -200,16 +211,13 @@
     
     <div class="row">
       <div class="small-12 large-4 medium-6 column2 video-container">
-      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDavidAllisonINC%2Fvideos%2F153510655217560%2F" width="360" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+      <div class="fb-video" data-href="https://www.facebook.com/DavidAllisonINC/videos/160712807830678/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/DavidAllisonINC/videos/160712807830678/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DavidAllisonINC/videos/160712807830678/">Motivation</a><p>Our research discovered 10 Archetype Audiences that are up to 700% more powerful than traditional audience targeting. Here is some insight on how we developed them. #MarketMotivation</p>Posted by <a href="https://www.facebook.com/DavidAllisonINC/">David Allison Inc.</a> on Monday, July 31, 2017</blockquote></div>
       <h6>Marketing | Branding | Strategy</h6>
       <h3>Valuegraphic Archetypes</h3>
       <p>At David Allison Inc. we've created an entirely new system to define and profile target audiences. We call them Valuegraphic Archetypes. #MarketMotivation</p>
     </div>
     <div class="small-12 large-4 medium-6 column2 video-container">
-      <video controls="" height="240" width="360" style="margin-top: -20px; margin-bottom: 20px;">
-        <source src="video/what-motivates-most.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDavidAllisonINC%2Fvideos%2F160712807830678%2F" width="360" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       <h6>Research | Surveys | Valuegraphics</h6>
       <h3>What Motivates Most?</h3>
       <p>Over the years we've done a lot of research. We've talked to people about homes, what they value, want, need, and expect out of life. Our 40,000 surveys tell us that — basically — people just want to belong.</p>
@@ -250,7 +258,7 @@
 <!-- FOOTER -->
 
 <footer>
-  <div class="row">
+  <div class="row footer">
     <div class="large-4 medium-6 small-12 columns">
       <div class="contact">
         <ul class="footer-item">
@@ -282,6 +290,25 @@
       </div>
     </div>
   </div>
+
+  <!-- MOBILE FOOTER -->
+
+  <div class="mobile-footer-social">
+    <li>
+      <a class="no-top" href="https://www.linkedin.com/in/6047860152/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+      <a class="no-top" href="https://www.instagram.com/davidallisoninc/" target="_blank"><img src="img/instagram.svg" alt=""></a>
+      <a class="no-top" href="https://twitter.com/IncDavidAllison" target="_blank"><img src="img/twitter.svg" alt=""></a></a>
+      <a class="no-top" href="https://www.facebook.com/DavidAllisonInc" target="_blank"><img src="img/facebook.svg" alt=""></a>
+    </li>
+  </div>
+
+  <div class="mobile-footer">
+    Vancouver, Canada <br>
+    <a href="mailto:info@davidallisoninc.com">info@davidallisoninc.com</a>
+  </div>
+
+  <!-- END MOBILE FOOTER -->
+
   <div class="row">
     <div class="large-12 columns footer-logo">
       <a href="https://www.davidallisoninc.com"><img src="img/logox2.png" alt=""></a>

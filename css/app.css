@@ -334,6 +334,7 @@ li a.no-top:hover {
     text-align: left;
 }
 
+
 .dropdown-content a:hover {
     background-color: #000;
 }
@@ -382,7 +383,7 @@ li a.no-top:hover {
   }
   .dropdown-content a {
   	font-size: .8em;
-  	padding: 6px 12px; 
+  	padding: 6px 20px; 
   }
   .landing-img {
   	height: 225px;
@@ -418,9 +419,12 @@ li a.no-top:hover {
 	.block {
 		background-color: #f4f4f4;
 		padding: 25px 0;
+		margin-bottom: 25px;
 	}
 	.block-white {
+		background-color: #f4f4f4;
 		padding: 25px 0;
+		margin-bottom: 25px;
 	}
 	.block-kraft {
 		background-color: #f4f4f4;
@@ -550,7 +554,7 @@ span.arrow:hover {
 }
 
 .bio-cover img {
-	margin-top: -37px;
+	
 }
 
 .bio-cover h1 {
@@ -987,6 +991,18 @@ p.CTA {
 	padding: 25px;
 }
 
+.mobile-footer {
+	display: none;
+}
+
+.mobile-footer-social {
+	display: none;
+}
+
+.bureau-note {
+	text-align: right;
+}
+
 /*	Media Queries  */
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -1023,6 +1039,34 @@ p.CTA {
 }
 
 @media screen and (max-width: 39.9375em) {
+	.footer {
+		display: none;
+	}
+
+	.mobile-footer {
+		display: block;
+		text-transform: uppercase;
+		font-size: 9px;
+    	letter-spacing: .5px;
+    	line-height: 2.3;
+    	text-align: center;
+    	padding: 2em 0 3em 0;
+	}
+
+	.mobile-footer-social {
+		display: block;
+	}
+	
+	.mobile-footer-social li {
+		list-style-type: none;
+		text-align: center;
+		padding: 1.5em 0 0 0;
+	}
+
+	.mobile-footer-social img {
+		width: 25px;
+	}
+
 	.doug-quote {
 		padding-bottom: 100px;
 	}
@@ -1045,7 +1089,28 @@ p.CTA {
 	}
 	.bureau {
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 25px;
 	}
+
+	.bureau-item {
+	display: block;
+	}
+
+	.bureau-item h5 {
+		
+	}
+
+	.bureau-note {
+	padding: 0 2em;
+	text-align: center;
+	}
+
+	.large-12.margintop-100	{
+		display: none
+	}
+
 	.rotate-left,
 	.rotate-right {
 		display: none;
@@ -1060,8 +1125,8 @@ p.CTA {
 		font-size: 3em;
 	}
 	.bureau img {
-	width: 75px;
-	height: 75px;
+	width: 35px;
+	height: 35px;
 	margin: 25px 25px 25px 25px;
 	}
 	h1.brand-logo {
@@ -1133,6 +1198,9 @@ p.CTA {
 	}
 	.block-kraft p.CTA {
 		color: #000;
+	}
+	.bio {
+		padding: 25px 25px 0 25px;
 	}
 }
 
