@@ -828,7 +828,7 @@ h1.sign-up {
 }
 
 .block:hover {
-	opacity: 0.7;
+	opacity: 0.8;
 	transition: opacity 1s;
   	-webkit-transition: opacity 1s;
 }
@@ -852,6 +852,7 @@ p.CTA {
 }
 
 .block p {
+	color: #cccccc;
 	margin-top: 5px;
 	font-size: .7em;
 	font-weight: 500;
