@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on 
+Redirect 301 /cdn-cgi/l/email-protection https://valuegraphics.com/ 
+Redirect 301 /about https://valuegraphics.com/about-us/ 
+Redirect 301 /index https://valuegraphics.com/ 
+Redirect 301 /advisory-services https://valuegraphics.com/howtoengage/ 
+Redirect 301 /new-research https://valuegraphics.com/the-science/
+Redirect 301 /contact https://valuegraphics.com/contact/
+Redirect 301 / https://valuegraphics.com/ 
+Redirect 301 ^(.*)$ https://valuegraphics.com/ 
+</IfModule>
