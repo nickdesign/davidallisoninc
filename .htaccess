@@ -1,3 +1,9 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^davidallisoninc.com[nc]
+RewriteRule ^(.*)$ http://www.davidallisoninc.com/$1 [r=301,nc]
+
 <IfModule mod_rewrite.c>
 RewriteEngine on 
 Redirect 301 /cdn-cgi/l/email-protection https://valuegraphics.com/ 
