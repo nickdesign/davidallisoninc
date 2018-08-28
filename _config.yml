@@ -1,3 +1,2 @@
----
-redirect_from: "/foo/"
----
+gems:
+  - jekyll-redirect-from
